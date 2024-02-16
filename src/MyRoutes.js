@@ -7,6 +7,8 @@ import Orders from './components/Orders';
 import CustomerList from './components/CustomerList';
 import Myoffcan from './Myoffcan';
 import Home from './components/Home';
+import Order_Details from './components/OrderDetails'
+
 
 const MyRoutes = () => {
   return (
@@ -20,6 +22,8 @@ const MyRoutes = () => {
           <Route path="/allfoods" element={<AllFoods />} />
           <Route path="/order" element={<Orders />} />
           <Route path="/customerlist" element={<CustomerList />} />
+          <Route path="/orderdetails/:orderid" element={<Order_Details />} />
+          
         </Routes>
       </div>
     </Router>
